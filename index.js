@@ -47,8 +47,9 @@ Use getFinals to do the following:
 hint - you should be looking at the stage key inside of the objects
 */
 
-function getFinals(/* code here */) {
-   /* code here */
+function getFinals(data) {
+   const finalTeams = data.filter(item => item.Stage === "Final");
+   return finalTeams;
 }
 
 
